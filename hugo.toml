@@ -1,0 +1,4 @@
+baseURL = 'https://kjnez.github.io'
+languageCode = 'en-us'
+title = 'Getting Real'
+theme = 'PaperMod'
