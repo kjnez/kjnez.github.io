@@ -68,3 +68,8 @@ If $a^2 = b$ and \(b = 2\), then the solution must be either $$a = +\sqrt{2}$$ o
 
 ** Image
 {{< figure src="https://kjnez.github.io/images/unicorn.png" title="unicorn" >}}
+
+** Footnotes
+
+The Org homepage[fn:1] now looks better than it used to be.
+[fn:1] The link is https://orgmode.org 
