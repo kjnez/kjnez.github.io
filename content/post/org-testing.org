@@ -1,0 +1,70 @@
+---
+title: "Org Testing"
+date: 2023-12-05T01:36:10-05:00
+draft: false
+---
+
+* First level
+** Second level
+*** Third level
+**** Fourth level
+
+* Markup
+Mary has a _little_ lamb, *little* lamb, /little/ lamb, ~little~ lamb, +not-big+ lamb.
+
+** Verses don't work
+#+begin_verse
+Great clouds overhead
+Tiny black birds rise and fall
+Snow covers Emacs
+
+  ---AlexSchroeder
+#+end_verse
+
+** Quotes work
+#+begin_quote
+Everything should be made as simple as possible,
+but not any simpler ---Albert Einstein
+#+end_quote
+
+** Centering works
+#+begin_center
+Everything should be made as simple as possible, \\
+but not any simpler
+#+end_center
+
+** Verbatim
+=verbatim=
+
+** Code
+~for i in list:~
+
+Python source:
+#+begin_src python
+  for i in range(10):
+      print(i)
+#+end_src
+
+Emacs Lisp source:
+#+begin_src emacs-lisp
+  (defun org-xor (a b)
+    "Exclusive or."
+    (if a (not b) b))
+#+end_src
+
+** Embedded LATEX
+The radius of the sun is R_sun = 6.96 x 10^8 m. On the other hand,
+the radius of Alpha Centauri is R_{Alpha Centauri} = 1.28 x R_{sun}.
+
+\begin{equation}
+x = \sqrt{b}
+\end{equation}
+
+\(
+x = \sqrt{b}
+\)
+
+If $a^2 = b$ and \(b = 2\), then the solution must be either $$a = +\sqrt{2}$$ or \[a = -\sqrt{2}\].
+
+** Image
+{{< figure src="https://kjnez.github.io/images/unicorn.png" title="unicorn" >}}
