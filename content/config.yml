@@ -1,0 +1,11 @@
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  ShowFullTextinRSS: true
+  socialIcons:
+    - name: "rss"
+      url: "kjnez.github.io/index.xml"
