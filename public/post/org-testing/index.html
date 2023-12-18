@@ -61,7 +61,22 @@ Verbatim verbatim">
         }
 
     </style>
-</noscript><meta property="og:title" content="Org Testing" />
+</noscript>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
+<meta property="og:title" content="Org Testing" />
 <meta property="og:description" content="First level Second level Third level Fourth level Markup Mary has a little lamb, little lamb, little lamb, little lamb, not-big lamb.
 Verses don&#39;t work Great clouds overhead Tiny black birds rise and fall Snow covers Emacs
 —AlexSchroeder
@@ -113,8 +128,8 @@ Verbatim verbatim"/>
   "keywords": [
     
   ],
-  "articleBody": " First level Second level Third level Fourth level Markup Mary has a little lamb, little lamb, little lamb, little lamb, not-big lamb.\nVerses don't work Great clouds overhead Tiny black birds rise and fall Snow covers Emacs\n—AlexSchroeder\nQuotes work Everything should be made as simple as possible, but not any simpler —Albert Einstein\nCentering works Everything should be made as simple as possible, but not any simpler\nVerbatim verbatim\nCode for i in list:\nPython source:\nfor i in range(10): print(i) Emacs Lisp source:\n(defun org-xor (a b) \"Exclusive or.\" (if a (not b) b)) Embedded LATEX The radius of the sun is R_sun = 6.96 x 10^8 m. On the other hand, the radius of Alpha Centauri is RAlpha Centauri = 1.28 x Rsun.\n\\begin{equation} x = \\sqrt{b} \\end{equation} \\( x = \\sqrt{b} \\)\nIf $a^2 = b$ and \\(b = 2\\), then the solution must be either $$a = +\\sqrt{2}$$ or \\[a = -\\sqrt{2}\\].\nImage unicorn Footnotes The Org homepage1 now looks better than it used to be.\n1 The link is https://orgmode.org ",
-  "wordCount" : "176",
+  "articleBody": " First level Second level Third level Fourth level Markup Mary has a little lamb, little lamb, little lamb, little lamb, not-big lamb.\nVerses don't work Great clouds overhead Tiny black birds rise and fall Snow covers Emacs\n—AlexSchroeder\nQuotes work Everything should be made as simple as possible, but not any simpler —Albert Einstein\nCentering works Everything should be made as simple as possible, but not any simpler\nVerbatim verbatim\nCode for i in list:\nPython source:\nfor i in range(10): print(i) Emacs Lisp source:\n(defun org-xor (a b) \"Exclusive or.\" (if a (not b) b)) Embedded LATEX The radius of the sun is R_sun = 6.96 x 10^8 m. On the other hand, the radius of Alpha Centauri is RAlpha Centauri = 1.28 x Rsun.\n\\begin{equation} x = \\sqrt{b} \\end{equation} \\( x = \\sqrt{b} \\)\nIf $a^2 = b$ and \\(b = 2\\), then the solution must be either $$a = +\\sqrt{2}$$ or \\[a = -\\sqrt{2}\\].\nFigure unicorn Footnotes The Org homepage1 now looks better than it used to be.\n1 The link is https://orgmode.org. Let's also test inline link.\n",
+  "wordCount" : "181",
   "inLanguage": "en",
   "datePublished": "2023-12-05T01:36:10-05:00",
   "dateModified": "2023-12-05T01:36:10-05:00",
@@ -136,19 +151,47 @@ Verbatim verbatim"/>
 
 <body class="" id="top">
 <script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\(', '\)']]
-    },
-    svg: {
-      fontCache: 'global'
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
     }
-  };
-</script>
-<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+
 </script>
 
-
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://kjnez.github.io/" accesskey="h" title="The Search (Alt + H)">The Search</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
 <main class="main">
 
 <article class="post-single">
@@ -157,7 +200,7 @@ Verbatim verbatim"/>
     <h1 class="post-title">
       Org Testing
     </h1>
-    <div class="post-meta"><span title='2023-12-05 01:36:10 -0500 EST'>December 5, 2023</span>
+    <div class="post-meta"><span title='2023-12-05 01:36:10 -0500 -0500'>December 5, 2023</span>
 
 </div>
   </header> 
@@ -279,11 +322,11 @@ If $a^2 = b$ and \(b = 2\), then the solution must be either $$a = +\sqrt{2}$$ o
 </div>
 <div id="outline-container-headline-12" class="outline-3">
 <h3 id="headline-12">
-Image
+Figure
 </h3>
 <div id="outline-text-headline-12" class="outline-text-3">
-<figure>
-    <img loading="lazy" src="https://kjnez.github.io/images/unicorn.png"/> <figcaption>
+<figure class="align-center ">
+    <img loading="lazy" src="https://kjnez.github.io/images/unicorn.png#center"/> <figcaption>
             unicorn
         </figcaption>
 </figure>
@@ -307,7 +350,7 @@ The Org homepage<sup class="footnote-reference"><a id="footnote-reference-1" hre
 <div class="footnote-definition">
 <sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
 <div class="footnote-body">
-<p>The link is <a href="https://orgmode.org">https://orgmode.org</a> </p>
+<p>The link is <a href="https://orgmode.org.">https://orgmode.org.</a> Let&#39;s also test <a href="https://orgmode.org">inline link</a>.</p>
 </div>
 </div>
 </div>

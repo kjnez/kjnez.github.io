@@ -1,0 +1,14 @@
+params:
+  homeInfoParams:
+    Title: Hi there
+    Content: Welcome to my blog
+  socialIcons:
+    - name: "rss"
+      url: "http://localhost:1313/index.xml"
+  ShowFullTextinRSS: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+#     - JSON
