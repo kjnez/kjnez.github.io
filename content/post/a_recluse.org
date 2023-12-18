@@ -1,0 +1,17 @@
+---
+title: "A Recluse"
+date: 2023-12-17T21:32:21-08:00
+draft: false
+---
+
+I'm spending a little time each day to read some traditional Chinese literature. Recently I've been interested in a book that can be dated to the early Zhou dynasty. /I Ching/ was believed (by some) to be written by King Wen of Zhou when he was a prisoner at Youli, apparently before 1000 BC. If it is true, this is currently the oldest book that I've ever read.
+
+What I'd like to share today is some comment on the first stacked line of the hexagram qian (䷀) from Confucius.
+
+#+begin_quote
+初九曰：“潜龙勿用。”何谓也？子曰：“龙德而隐者也。不易乎世，不成乎名；遁世无闷，不见是而无闷；乐则行之，忧则违之，确乎其不可拔，‘潜龙’也。”
+#+end_quote
+
+So he's talking about how to be a hermit. A hermit shouldn't be affected by the outside world and should stick to his own understanding of what is correct and what is not. There shouldn't be fear-of-missing-out (FOMO). Other's opinions matter little to him. And he is very steadfast on his own opinion even though most of the people don't agree with him.
+
+I'd say it is much harder to be a hermit today. The hardest part is probably due to the connected world we are living in. Being able to be immune to other people's comments and opinions seems to be a supernatural power. Extended isolation can literally drive a sane person crazy. Yet still, doing what your heart desires has never been so important. And in the end, you cannot always be a hermit. Everything is interconnected. You have to be connected to the society in some way. In ancient time, you can literally be a hermit. In modernity, you are only allowed to be a hermit temporarily.
