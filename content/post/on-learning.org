@@ -16,7 +16,7 @@ There are two kinds of memories: long-term memory and working (short-term) memor
 Experts have a lot of "chunks" of memories in their systems. Beginners being beginners, need to form those chunks by reasoning and remembering. Experts recognize patterns, beginners only see details. For programmers to be experts, reading a lot of code can be helpful.
 
 * Understanding a concept goes from abstract to concrete and back
-{{< figure src="https://kjnez.github.io/images/semantic_wave.png" alt="semantic wave" width="70%">}}
+{{< figure src="https://kjnez.github.io/images/semantic_wave.png" alt="semantic wave" width="70%" align=center>}}
 Experts are at the right side of the curve while beginners are at the left side of the curve. Knowing the general concept of something does not mean one really understands it. We have to start from the abstract idea, then going to the details, and finally go back to the abstract idea. Kind of following "what", "how" and "why".
 
 * Spacing and Repetition matter
