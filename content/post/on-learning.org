@@ -1,0 +1,47 @@
+---
+title: "On Learning"
+date: 2024-01-08T22:59:47-08:00
+draft: true
+---
+
+[[https://dl.acm.org/doi/10.1145/3584859][10 Things Software Developers Should Learn about Learning]]
+
+* Human memory is not made of bits
+A large chunk of learning is about remembering. Yet a human's memory is quite different from a computer's memory. We commit to our memory what we want to remember often imprecisely. The addition of related or unrelated memories may distort it ("spreading activation"). Not to mention the fact that we constantly forget what we learned as long as we don't use it. Overall it is a haphazard event.
+
+* Human memory is composed of one limited and one unlimited system
+There are two kinds of memories: long-term memory and working (short-term) memory. The former is more permanent than the latter. Analogous to a computer's memories, long-term memory is like the hard-drives and working memory is like the RAM. Short-term memory determines the bandwidth, long-term memory determines the capacity. Short-term memory is limited, long-term memory can be limitless. Short-term memory is largely determined by innate aptitude, long-term memory can be trained.
+
+* Experts recognize, beginners reason
+Experts have a lot of "chunks" of memories in their systems. Beginners being beginners, need to form those chunks by reasoning and remembering. Experts recognize patterns, beginners only see details. For programmers to be experts, reading a lot of code can be helpful.
+
+* Understanding a concept goes from abstract to concrete and back
+{{< figure src="https://kjnez.github.io/images/semantic_wave.png" alt="semantic wave" >}}
+Experts are at the right side of the curve while beginners are at the left side of the curve. Knowing the general concept of something does not mean one really understands it. We have to start from the abstract idea, then going to the details, and finally go back to the abstract idea. Kind of following "what", "how" and "why".
+
+* Spacing and Repetition matter
+Cramming is not that efficient. If you are good enough, you can take in most of the information in a very limited period of time. But it also means that you'll forget that information very fast. Remember that in the end, long-term memory is what matters most.
+
+* The Internet has not made learning obsolete
+Overly relying on the Internet can make learning itself much harder. Nowadays everything seems to be just a few keystrokes away, yet without forming long-term memory, higher level of understanding and abstraction will not be possible. Whenever we need to retrieve some information from the Internet, there's a context shifting, which disrupts the working memory. Despite the fact that the information is readily available on the Internet, there's still a lot of value in remembering the information.
+
+* Problem-solving is not a generic skill
+Knowledge is generally not domain-transferable. In terms of programming, the rule-of-thumb is that one shouldn't naively think training in an unrelated area can help improve programming skills (except for some rare cases such as spatial training). In terms of recruitment, the big companies have already realized this and substituted brain teasers with real programming tasks.
+
+* Expertise can be problematic in some situations
+A good expert may very well not be a good teacher. In fact, it can be hard for a good expert to be a good teacher. Being experts themselves, they fail to be in a beginner's place to think and experience the process of learning.
+
+* The predictors of programming ability are unclear
+Both inherent aptitude and practice determines how successful learning can be. Predictions on how good a programmer can be are largely failures. Being intelligent doesn't necessary mean the beginner will be a good programmer, and vice versa.
+
+* Your mindset matters
+There are two mindsets about learning: 1. The fixed mindset says you either can do it or not, and 2. the growth mindset says enough practice can ultimately make someone good at it. There's truth in either of these two points of view. Having a growth mindset is healthy for long-term learning but it is hard to maintain it. Setbacks will often turn a growth mindset into a fixed one. With experience, however, it can be redeveloped and strengthened.
+
+* My thoughts
+The biggest obstacles against learning today are distractions. The availability of Internet at everyone's fingertips is part of the reason. All kinds of web services are striving for the users' attention. Today, an average person's attention span must have been largely reduced than that two decades ago, probably one decade ago. I find myself most productive when I disconnect the Internet.
+
+The Internet is a double-edged sword. Use it wisely, it can be extremely helpful. Abuse it, it will greatly hinder your progress. As with all addictive things, it is usually hard to strike a balance. My current solution is to try to stay offline as much as possible and only use the Internet when it is necessary.
+
+In an age where ChatGPT is eating all, it is more important to form long memories and deeper understandings of things that matter. One must be careful to choose what to learn and how to learn. Lindy effect tells us that on average, technologies that have survived longer are more likely to exist longer in the future. The basics, fundamentals, things that don't change often are always more important to master first. Instead of chasing new, hot APIs, I'd rather go back to the fundamentals and focus my attention on the well-established stuff. That way, when really important things appear, I can still grasp them fairly quickly.
+
+Knowledge is not free, one has to pay attention. In an era that values knowledge most, to learn is to survive. There's really no shame in failures of learning because learning is a life-long battle. The important thing is to keep coming back to the battlefield and always be humble and be ready to learn.
