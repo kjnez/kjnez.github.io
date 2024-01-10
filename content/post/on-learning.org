@@ -1,7 +1,7 @@
 ---
 title: "On Learning"
 date: 2024-01-08T22:59:47-08:00
-draft: true
+draft: false
 ---
 
 [[https://dl.acm.org/doi/10.1145/3584859][10 Things Software Developers Should Learn about Learning]]
