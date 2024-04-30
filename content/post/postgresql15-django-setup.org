@@ -1,0 +1,32 @@
+---
+title: "Postgresql15 Django Setup"
+date: 2024-04-10T14:40:12-07:00
+draft: false
+---
+
+* How to setup databases for your application and testing?
+** Database creation
+#+begin_src sql
+  CREATE DATABASE mydb;
+  CREATE DATABASE test_mydb;
+  CREATE USER me WITH PASSWORD 'password';
+  -- Connect to mydb
+  \connect mydb;
+  -- Create a schema with me as owner
+  CREATE SCHEMA my_schema AUTHORIZATION me;
+  -- Create an extension
+  CREATE EXTENSION postgis SCHEMA my_schema;
+  -- Connect to test_mydb
+  \connect test_mydb;
+  -- Create a schema with me as owner
+  CREATE SCHEMA test_schema AUTHORIZATION me;
+  -- Create an extension
+  CREATE EXTENSION postgis SCHEMA test_schema;
+
+  -- Settings recommended by Django doc
+  ALTER ROLE me SET client_encoding TO 'utf8';
+  ALTER ROLE me SET default_transaction_isolation TO 'read committed';
+  ALTER ROLE me SET timezone TO 'UTC';
+#+end_src
+The DATABASE_URL will be
+DATABASE_URL='postgresql://me@myHost:myPort/mydb?options=--search_path%3Dmy_schema,test_schema'

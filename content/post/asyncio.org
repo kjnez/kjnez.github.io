@@ -1,0 +1,11 @@
+---
+title: "Asyncio"
+date: 2024-04-30T16:39:52-07:00
+draft: true
+---
+
+Asyncio is very useful when dealing with IO intensive tasks. Compared to multi-threading, asyncio has the advantage that it usually takes less computational resource. It is especially fitted to deal with web requests, where the pausing is usually long (waiting for response from the server).
+
+There are more than one ways to write asynchronous code in Python. The traditional way is to use callbacks. Callbacks have the disadvantage of "stack ripping", meaning it is hard to know where a problem comes from when one is running into a bug. A better way to write asynchronous code is to use coroutines. Coroutines are deeply inter-wined with Python's generators in that it directly relies on the =yield= and =yield from= to complete the continuation. Starting from Python 3.5, =async def= and =await= are introduced to make everything feels more pythonic. But the underlying principles are the same as before.
+
+It's important to understand that Python's generators have frames that live on the heap, rather than stack, which gives them states. The difficulty of writing asynchronous code lies in the fact that the programmer has to manually control the states in the code. Generators are helpful here because they have states.
