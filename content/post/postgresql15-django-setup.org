@@ -23,10 +23,11 @@ draft: false
   -- Create an extension
   CREATE EXTENSION postgis SCHEMA test_schema;
 
+  GRANT ALL PRIVILEGES ON DATABASE my_db TO me;
   -- Settings recommended by Django doc
   ALTER ROLE me SET client_encoding TO 'utf8';
   ALTER ROLE me SET default_transaction_isolation TO 'read committed';
   ALTER ROLE me SET timezone TO 'UTC';
 #+end_src
 The DATABASE_URL will be
-DATABASE_URL='postgresql://me@myHost:myPort/mydb?options=--search_path%3Dmy_schema,test_schema'
+DATABASE_URL='postgresql://me:password@myHost:myPort/mydb?options=--search_path%3Dmy_schema,test_schema'
