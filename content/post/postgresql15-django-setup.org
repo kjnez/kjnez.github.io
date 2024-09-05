@@ -12,6 +12,8 @@ draft: false
   CREATE USER me WITH PASSWORD 'password';
   -- Connect to mydb
   \connect mydb;
+  -- AWS quirks
+  GRANT me TO POSTGRES;
   -- Create a schema with me as owner
   CREATE SCHEMA my_schema AUTHORIZATION me;
   -- Create an extension
