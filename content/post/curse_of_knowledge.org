@@ -1,7 +1,7 @@
 ---
 title: "Curse_of_knowledge"
 date: 2024-09-04T23:57:28-07:00
-draft: true
+draft: false
 ---
 
 #+begin_quote
